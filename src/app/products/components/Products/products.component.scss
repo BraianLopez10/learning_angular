@@ -1,0 +1,4 @@
+.wrap-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(375px , 1fr));
+}

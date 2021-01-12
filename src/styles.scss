@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~swiper/swiper-bundle";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+* {
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media screen and (min-width:768px) {
+  .container { 
+    max-width: 1110px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin: auto;
+  }
+}

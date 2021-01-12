@@ -1,0 +1,46 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="block block-1">
+        <div class="box">
+          <h3>Productos</h3>
+          <ul>
+            <li>
+              <a routerLink="/products" [queryParams]="{ type: 'news' }"
+                >Nuevos Productos</a
+              >
+            </li>
+            <li>
+              <a routerLink="/products" [queryParams]="{ type: 'offer' }"
+                >En oferta</a
+              >
+            </li>
+            <li>
+              <a routerLink="/products" [queryParams]="{ type: 'latest' }"
+                >Últimos productos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="block block-2">
+        <div class="box">
+          <h3>Acerca de PlatziStore</h3>
+          <ul>
+            <li><a routerLink="/about-us">Sobre nosotros</a></li>
+            <li><a routerLink="/stores">Nuestras tiendas</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="block block-3">
+        <div class="box">
+          <h3>Contacto</h3>
+          <mat-form-field>
+            <input placeholder="Correo electronico" matInput [formControl] = "emailField" type="email">
+          </mat-form-field>
+          <button [disabled]="emailField.invalid" (click)="sendMail()" mat-raised-button>Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
